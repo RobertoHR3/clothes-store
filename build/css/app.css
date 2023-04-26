@@ -318,7 +318,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Staatliches", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -340,42 +340,75 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 3.6rem;
+}
+
 img {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-.barra {
-  background-color: #37306B;
-  padding: 2rem 0;
+.header {
+  background-image: url(../img/clothes_store.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
-.barra .barra-flex {
+.header h1, .header h2, .header p {
+  margin: 0;
+}
+.header .header_content {
+  position: absolute;
+  background-color: rgba(33, 33, 33, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.header .header_text {
+  color: #E8E8E8;
+  text-align: center;
+  margin-top: 15rem;
+  letter-spacing: 4px;
+}
+@media (min-width: 768px) {
+  .header .header_text {
+    margin-top: 25rem;
+  }
+}
+.header .header_text p {
+  color: #E8E8E8;
+  margin-top: 2rem;
+  font-size: 2.4rem;
+}
+
+.barra {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 0;
   gap: 2rem;
 }
-@media (min-width: 480px) {
-  .barra .barra-flex {
+@media (min-width: 768px) {
+  .barra {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
-.barra .barra-flex img {
-  width: 40%;
-  height: 5%;
+.barra h1 {
+  color: #E8E8E8;
+  font-weight: 400;
 }
-@media (min-width: 480px) {
-  .barra .barra-flex img {
-    width: 20%;
-  }
+.barra h1 span {
+  font-weight: 700;
 }
-.barra .barra-flex .cart {
+.barra img {
   width: 5rem;
   height: 5rem;
 }
-.barra .barra-flex .cart:hover {
+.barra img:hover {
   cursor: pointer;
 }

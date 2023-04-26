@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    background-image: url(../img/clothes_store.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    h1, h2, p {
+        margin: 0;
+    }
+
+    .header_content {
+        position: absolute;
+        background-color: rgb(33 33 33 / 70%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .header_text {
+        color: v.$white;
+        text-align: center;
+        margin-top: 15rem;
+        @include m.mediaQuery(v.$tablet) {
+            margin-top: 25rem;
+        }
+        letter-spacing: 4px;
+        p {
+            color: v.$white;
+            margin-top: 2rem;
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+    @include m.mediaQuery(v.$tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h1 {
+        color: v.$white;
+        font-weight: 400;
+
+        span {
+            font-weight: 700;
+        }
+    }
+    
+    img {
+        width: 5rem;
+        height: 5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
