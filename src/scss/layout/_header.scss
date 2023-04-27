@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .header {
-    background-image: url(../img/clothes_store.jpg);
+    background-image: url(../img/clothes_store.avif);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,6 +14,7 @@
     }
 
     .header_content {
+        
         position: absolute;
         background-color: rgb(33 33 33 / 70%);
         width: 100%;

@@ -351,7 +351,7 @@ img {
 }
 
 .header {
-  background-image: url(../img/clothes_store.jpg);
+  background-image: url(../img/clothes_store.avif);
   height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -411,4 +411,29 @@ img {
 }
 .barra img:hover {
   cursor: pointer;
+}
+
+.about_store {
+  background: linear-gradient(90deg, rgba(10, 77, 104, 0.85) 0%, rgba(8, 131, 149, 0.85) 100%);
+}
+@media (min-width: 768px) {
+  .about_store .about_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.about_store .about_icono {
+  display: flex;
+  align-items: center;
+}
+.about_store .about_icono img {
+  width: 15rem;
+  height: 10rem;
+}
+.about_store .about_icono p {
+  color: #E8E8E8;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
 }

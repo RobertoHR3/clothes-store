@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about_store {
+    background: linear-gradient(90deg, rgba(10,77,104,0.85) 0%, rgba(8,131,149,0.85) 100%);
+    @include m.mediaQuery(v.$tablet) {
+        .about_grid {
+            @include m.grid_column(4, 1fr);
+        }
+    }
+
+    .about_icono {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 15rem;
+            height: 10rem;
+        }
+
+        p {
+            color: v.$white;
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+}
